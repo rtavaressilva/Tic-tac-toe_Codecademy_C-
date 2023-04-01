@@ -1,0 +1,4 @@
+"/Users/rtavaressilva/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/rtavaressilva/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/rtavaressilva/CLionProjects/tic-tac-toe-starting -B /Users/rtavaressilva/CLionProjects/tic-tac-toe-starting/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/rtavaressilva/CLionProjects/tic-tac-toe-starting/cmake-build-debug
