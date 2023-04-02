@@ -10,7 +10,8 @@
 void printGrid(std::vector<char> grid);
 bool gameEnded(std::vector<char> grid);
 void victoryMessage(char player);
-int requestGridPosition();
+int validatePosition(int position, std::vector<char> grid);
+int availablePosition(int position, std::vector<char> grid);
 
 
 
