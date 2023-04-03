@@ -14,28 +14,21 @@ void printGrid(std::vector<char> grid) {
 }
 
 int validatePosition(int position, std::vector<char> grid) {
-        if (position < 0 || position > 8) {
-    while (position < 0 || position > 8) {
+    if (position < 0 || position > 8) {
+        while (position < 0 || position > 8) {
             std::cout << "Invalid position. Enter a position between 0 and 9: ";
             std::cin >> position;
         }
-//        std::cout << "Position is " << position << std::endl;
-//      position = availablePosition(position, grid);
-//        std::cout << "Position is " << position << std::endl;
     }
     return position;
 }
-   int availablePosition(int position, std::vector<char> grid) {
-
-    if (grid[position] == 'x' || grid[position] == 'o') {
-       while (grid[position] == 'x' || grid[position] == 'o'){
+int positionNotAvailable(int position, std::vector<char> grid) {
+    while (grid[position] == 'x' || grid[position] == 'o'){
         std::cout << "This position is not available. Choose an empty "
                      "one: ";
         std::cin >> position;
     }
-//    validPosition = true;
-}
-return position;
+    return position;
 }
 
 void victoryMessage(char player) {
@@ -43,7 +36,13 @@ void victoryMessage(char player) {
 }
 
 bool gameEnded(std::vector<char> grid) {
-bool matchOver = false;
+        bool matchOver = false;
+    //check if draw
+    for (int i = 0; i < grid.size();i++) {
+        if (grid[i] == 'x' || grid[i] == 'o') {
+            //TODO!!!
+        }
+    }
     //vertical combinations
     //COLUMN 1
     if (grid[0] == 'x' && grid[3] == 'x' && grid[6] == 'x') {
